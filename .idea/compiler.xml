@@ -7,12 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Pi_Spring" />
+        <module name="KnowledgeBridge" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Pi_Spring" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="KnowledgeBridge" options="-parameters" />
       <module name="Pi_Spring" options="-parameters" />
     </option>
   </component>
